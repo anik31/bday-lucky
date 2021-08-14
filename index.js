@@ -6,8 +6,13 @@ const output = document.querySelector("#output");
 checkBtn.addEventListener("click",()=>{
     var birthDateValue = birthDate.value;
     var luckyNumValue = luckyNum.value;
-    console.log(birthDateValue,luckyNumValue)
-    checkLucky(birthDateValue,luckyNumValue);
+    if(birthDateValue == ""){
+        output.innerText = "Please enter your birth date to continue.";
+    }else if(luckyNumValue == ""){
+        output.innerText = "Please enter your lucky number to continue.";
+    }else{
+        checkLucky(birthDateValue,luckyNumValue);
+    }
 })
 
 function checkLucky(birthDateValue,luckyNumValue){
@@ -21,12 +26,9 @@ function checkLucky(birthDateValue,luckyNumValue){
 
 function birthDateSum(birthDateValue){
     var dob = birthDateValue.replaceAll("-","");
-    console.log(dob,typeof dob, dob.length)
     var sum = 0;
     for(var i=0;i<dob.length;i++){
-        console.log(dob.charAt(i),typeof dob.charAt(i))
         sum += Number(dob.charAt(i));
     }
-    console.log(sum);
     return sum;
 }
