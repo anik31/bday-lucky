@@ -8,7 +8,7 @@ A VanillaJS app to check whether your birthday is lucky or not.
 * JavaScript
 
 ## Features
-1. Empty string validation.
+1. Empty input validation.
 2. Output image based on the result.
 
 ## Project setup
