@@ -2,6 +2,7 @@ const birthDate = document.querySelector("#dob");
 const luckyNum = document.querySelector("#num-lucky");
 const checkBtn = document.querySelector("#btn-check");
 const output = document.querySelector("#output");
+const outputImg = document.querySelector("#output-img");
 
 checkBtn.addEventListener("click",()=>{
     var birthDateValue = birthDate.value;
@@ -18,9 +19,11 @@ checkBtn.addEventListener("click",()=>{
 function checkLucky(birthDateValue,luckyNumValue){
     if(birthDateSum(birthDateValue) % luckyNumValue == 0){
         output.innerText = "😊 Your Birthday is Lucky!! 😊";
+        outputImg.src = "/images/happy.svg";
     }
     else{
         output.innerText = "🥺 Your Birthday is not Lucky!! 🥺"
+        outputImg.src = "/images/sad.svg";
     }
 }
 
