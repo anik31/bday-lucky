@@ -29,7 +29,6 @@ button{
     border-radius: 0.5rem;
     padding: 1rem 2rem;
     font-weight: bold;
-    /* border: none; */
     max-width: 200px;
     cursor: pointer;
 }
@@ -43,9 +42,9 @@ img{
 }
 input{
     padding: 0.5rem;
-    background: #FCA5A5;
+    background: var(--off-white);
     border-radius: 1rem;
-    border: 1px solid #FCA5A5;
+    border: none;
     font-size: 17px;
     text-align: center;
 }
