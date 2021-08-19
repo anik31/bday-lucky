@@ -14,35 +14,36 @@ body{
 }
 input,label{
     display: block;
-    margin: 1rem auto;
+    margin: 1.1rem auto;
 }
 h1{
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 label{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 button{
-    color: var(--off-white);
+    color: var(--focus-text);
     background: transparent;
-    border: 1px solid var(--off-white);
+    border: 1px solid var(--focus-text);
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     font-weight: bold;
     max-width: 200px;
     cursor: pointer;
+    font-size: 15px;
 }
 #output{
     font-size: larger;
     font-weight: bold;
-    color: var(--off-white);
+    color: var(--focus-text);
 }
 img{
-    width: 200px;
+    width: 150px;
 }
 input{
     padding: 0.5rem;
-    background: var(--off-white);
+    background: var(--focus-text);
     border-radius: 1rem;
     border: none;
     font-size: 17px;
@@ -51,8 +52,27 @@ input{
 #privacy{
     display: inline;
     margin: auto;
-    padding: 0.8rem;
+    padding: 0.5rem;
     border: 1px solid white;
     border-radius: 1rem;
     color: white;
+    font-size: 15px;
+}
+ul{
+    padding-inline-start: 0;
+}
+.fab,.fas{
+    font-size: 30px;
+    color: var(--focus-text);
+    margin: 0 0.5rem;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
 }
